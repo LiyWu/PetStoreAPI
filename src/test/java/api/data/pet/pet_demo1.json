@@ -1,0 +1,19 @@
+
+{
+  "id": 1,
+  "category": {
+    "id": 1,
+    "name": "Cavoodle"
+  },
+  "name": "Doggie1",
+  "photoUrls": [
+    "https://example.com/dog1_test_image1.jpg"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "VIN_ID"
+    }
+  ],
+  "status": "available"
+}
