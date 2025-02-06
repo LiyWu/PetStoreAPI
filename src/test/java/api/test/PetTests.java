@@ -26,7 +26,6 @@ public class PetTests {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
 
     @Test
@@ -42,6 +41,8 @@ public class PetTests {
         Assert.assertEquals(response.jsonPath().getString("name"), petPayload.getName());
         // Check 'status' field
         Assert.assertEquals(response.jsonPath().getString("status"), petPayload.getStatus());
+        // Check 'Category' field
+        Assert.assertEquals(response.jsonPath().getObject("category", PetPayload.Category.class).getName(), petPayload.getCategory().getName());
     }
     @Test
     public void findPetByID()

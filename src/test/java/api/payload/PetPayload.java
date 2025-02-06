@@ -11,16 +11,16 @@ public class PetPayload {
     private List<String> photoUrls;
     private List<Tag> tags;
     private String status;
-}
+    @Data
+    public static class Category {
+        private int id;
+        private String name;
+    }
 
-@Data
-class Category {
-    private int id;
-    private String name;
-}
+    @Data
+    public static class Tag {
+        private int id;
+        private String name;
+    }
 
-@Data
-class Tag {
-    private int id;
-    private String name;
 }
