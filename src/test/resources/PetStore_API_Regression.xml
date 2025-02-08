@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="PetStore Regression" configfailurepolicy="continue">
+
+ <listeners>
+     <listener class-name="api.utils.listener.CustomListener"/>
+  </listeners>
+ <test name="regression">
+   <classes>
+     	<class name="api.test.PetTests">
+            <methods>
+                <include name="addPet"/>
+				<include name="uploadImage"/>
+				<include name="updatePet"/>
+				<include name="updatePetWithFormData"/>
+				<include name="findPetByID"/>
+				<include name="findPetByStatus"/>
+				<include name="deletePet"/>
+            </methods>
+        </class>
+    </classes>
+  </test>
+</suite>
