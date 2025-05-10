@@ -61,10 +61,11 @@ public class PetTests {
     public void findPetByStatus()
     {
         //List<String> statuses = Arrays.asList("available", "pending", "sold");
-        List<String> statuses = Arrays.asList("sold");
+        List<String> statuses = Arrays.asList("available");
 
         Response response = PetEndPoints.findPetByStatus(statuses);
 
+        System.out.println("status:" + response.jsonPath().getString("status[0]"));
         // don't print, too many results
         //response.then().log().all();
         // Check status code
