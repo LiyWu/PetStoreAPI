@@ -1,7 +1,7 @@
 # PetStoreAPI by Helen Wu
 
-## Github URL for my feature branch:
-https://github.com/LiyWu/PetStoreAPI/tree/feature/HelenWu-CBATest
+## Github URL for my repo:
+https://github.com/LiyWu/PetStoreAPI
 
 ## Development Environment
 IDE: IntelliJ  
@@ -14,8 +14,6 @@ There are two ways to run the test:
 ```sh
 git clone https://github.com/LiyWu/PetStoreAPI.git
 cd PetStoreAPI
-# switch to the feature branch
-git checkout feature/HelenWu-CBATest 
 ```
 
 2. run the tests
@@ -30,5 +28,5 @@ open ExtentReports/ExtentReportResults.html
 
 ### Goto Github and run from Actions
 1. go to https://github.com/LiyWu/PetStoreAPI/actions/workflows/ci.yml
-2. click button "Run workflow", select "feature/HelenWu-CBATest", then click "Run workflow"
+2. click button "Run workflow", select "master", then click "Run workflow"
 3. download the test-results artifact in Artifacts section, unzip it and view the html report "ExtentReportResults.html"
